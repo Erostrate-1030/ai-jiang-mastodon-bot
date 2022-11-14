@@ -11,7 +11,7 @@ import fs from "fs";
 const exec_promisify = util.promisify(exec);
 
 const M = new Mastodon({
-    client_key: process.env.CLIENT_KEY, //使用.env中的信息，隐去上一个代码块中的相关信息
+    client_key: process.env.CLIENT_KEY, // 使用.env中的信息，隐去上一个代码块中的相关信息
     client_secret: process.env.CLIENT_SECRET,
     access_token: process.env.AUTH_TOKEN,
     timeout_ms: 60 * 1000,  
@@ -24,7 +24,7 @@ const M = new Mastodon({
 
 //=================================
 // 功能 1：定时叹气
-//=================================
+//=================================s
 
 const sigh = 'python ./sigh.py';
 // 获取相应功能的 .py
@@ -77,14 +77,14 @@ listener.on('message', msg => {
     console.log(msg.event);
     console.log(msg.data.type);
     console.log('user event');
-    /*
+    
     if (msg.event === 'notification'){
         if (msg.data.type === 'favorite'){
             const acct = msg.data.account.acct;
             console.log(`${acct} favourtied you.`)
         }
     };
-    */
+    
 });
 
 listener.on('error', err => console.log(err))
