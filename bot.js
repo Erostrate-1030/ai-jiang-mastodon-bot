@@ -71,24 +71,26 @@ async function toot_sigh(){
 //=================================
 // const chuchu = 'python ./chuchu.py';
 // 获取相应功能的 .py
+
+/*
 const listener = M.stream('streaming/user');
 	
 listener.on('message', msg => {
     console.log(msg.event);
     console.log(msg.data.type);
     console.log('user event');
-    /*
+    
     if (msg.event === 'notification'){
         if (msg.data.type === 'favorite'){
             const acct = msg.data.account.acct;
             console.log(`${acct} favourtied you.`)
         }
     };
-    */
+    
 });
 
 listener.on('error', err => console.log(err))
-
+*/
 
 
 //=================================
